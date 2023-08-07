@@ -1,0 +1,128 @@
+.quem-somos {
+    background: #FFFFFF;
+    color: #0a0a0a;
+    padding: 0px 20px;
+}
+
+
+.quem-somos .quem-somos-text {
+    margin-top: 64px;
+}
+
+.quem-somos .quem-somos-text {
+    font-family:'Roboto', Arial, sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.quem-somos-text ::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 186px;
+    background: linear-gradient(#FFF9E5, #f0ce39);
+    position: absolute;
+    top: 30px;
+    left: -24px;
+}
+
+.quem-somos .quem-somos-text strong {
+    color: #D6A700;
+}
+
+.quem-somos-imgs {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.quem-somos-img {
+    flex: 1;
+    width: 10rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1100px) {
+    .quem-somos {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .quem-somos h2 {
+        font-size: 4rem;
+    }
+    .quem-somos .quem-somos-text {
+        font-size: 1.5rem;
+    }
+
+    .quem-somos-text ::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 164px;
+        background: linear-gradient(#FFF9E5, #f0ce39);
+        position: absolute;
+        top: 30px;
+        left: -24px;
+    }
+
+    .quem-somos-img {
+        width: 6rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .quem-somos-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .quem-somos .quem-somos-text {
+        margin-top: 0px;
+    }
+    .quem-somos h2 {
+        font-size: 3rem;
+    }
+
+    .quem-somos-imgs {
+        padding: 40px 20px;
+    }
+
+    .quem-somos-text ::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 128px;
+        background: linear-gradient(#FFF9E5, #f0ce39);
+        position: absolute;
+        top: 30px;
+        left: -20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .quem-somos-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .quem-somos h2 {
+        font-size: 2rem;
+    }
+    .quem-somos .quem-somos-text {
+        margin-top: 0px;
+        font-size: 1.128rem;
+    }
+
+    .quem-somos-img {
+        width: 4rem;
+    }
+
+}

@@ -1,0 +1,86 @@
+.introducao {
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    padding: 72px 20px;
+}
+
+
+.introducao h1 {
+    font-size: 4rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+    color: #141414;
+}
+
+.introducao h2 {
+    font-size: 2.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+    color: #141414;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.introducao h2 strong {
+    color: #D6A700;
+    font-weight: bold;
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: url("../img/detalhe1.svg") no-repeat center;
+    background-size: 110%;
+    position: absolute;
+    top: 15px;
+    left: -50px;
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .introducao {
+        grid-template-columns: 1fr 2fr;
+    }
+    .introducao h1 {
+        font-size: 3rem;
+    }
+    .introducao h2 {
+        font-size: 2rem;
+    }
+    .introducao h1::before {
+        width: 30px;
+        height: 30px;
+        top: 12px;
+        left: -35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    .introducao h1 {
+        font-size: 2rem;
+    }
+    .introducao h2 {
+        font-size: 1.5rem;
+    }
+
+    .introducao h1::before {
+        background: none;
+    }
+    .introducao img {
+        display: none;
+    }
+}
